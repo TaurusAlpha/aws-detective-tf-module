@@ -8,7 +8,7 @@ module "import_org" {
 }
 
 module "detective_baseline_ireland" {
-  source = "./detective-baseline"
+  source = "./modules/detective-baseline"
 
   depends_on = [module.import_org]
 
@@ -22,7 +22,7 @@ module "detective_baseline_ireland" {
 }
 
 module "detective_baseline_frankfurt" {
-  source = "./detective-baseline"
+  source = "./modules/detective-baseline"
 
   depends_on = [module.import_org]
 
@@ -36,7 +36,7 @@ module "detective_baseline_frankfurt" {
 }
 
 module "detective_baseline_london" {
-  source = "./detective-baseline"
+  source = "./modules/detective-baseline"
 
   depends_on = [module.import_org]
 
